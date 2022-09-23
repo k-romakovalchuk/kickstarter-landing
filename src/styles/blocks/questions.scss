@@ -1,0 +1,88 @@
+.questions {
+  margin-bottom: 107px;
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #333;
+
+    @include onTablet {
+      font-size: 56px;
+      line-height: 70px;
+    }
+
+    @include onMobile {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__input {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333;
+    width: 100%;
+    border: 2px solid #f7f7f7;
+
+    &::placeholder {
+      font-family: inherit;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+
+      color: #bdbdbd;
+    }
+
+    &:focus {
+      outline: #0db2b3;
+      border: 2px solid #0db2b3;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height: 128px;
+    resize: none;
+  }
+
+  &__button {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+    width: 102px;
+    height: 48px;
+    background-color: #0db2b3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: transparent;
+    box-shadow: 0 5px 10px #0db2b3;
+
+    cursor: pointer;
+
+    &:active {
+      box-shadow: 0 10px 20px #0db2b9;
+    }
+  }
+}
